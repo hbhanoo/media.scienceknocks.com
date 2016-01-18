@@ -1,0 +1,45 @@
+vars:
+  server: "http://media.scienceknocks.com"
+  description: "Science Knocks is a three minute science podcast hosted by Sindya Bhanoo, Observatory columnist for The New York Times, and her daughter, age four."
+  author: "The Bhanoos"
+  episode_base: "%{server}/episodes/%{episode_guid}"
+  episode_thumbnail: "%{episode_base}/%{episode_guid}.jpg"
+  episode_enclosure: "%{episode_base}/%{episode_guid}.%{mediaExt}"
+defaults:
+  item:
+    itunes.author: "%{author}"
+    itunes.image: "%{episode_thumbnail}"
+    enclosure: "%{episode_enclosure}"
+    guid: "%{episode_enclosure}"
+
+channel:
+  title: "Science Knocks (%{mediaType})"
+  link: http://www.facebook.com/scienceknocks
+  language: en-us
+  copyright: "2016 Science Knocks"
+  itunes.subtitle: Science for kids, by kids
+  itunes.author: "%{author}"
+  itunes.summary: "%{description}"
+  description: "%{description}"
+  itunes.owner:
+    itunes.name: Hemant Bhanoo
+    itunes.email: accounts@scienceknocks.com
+  itunes.image: "%{server}/profile.jpg"
+  itunes.category: "Kids & Family"
+  itunes.explicit: clean
+
+  item:
+    - vars:
+        episode_guid: "2016-01"
+      pubDate: Wed, 6 Jan 2016 15:28:29 PST
+      itunes.duration: 00:03:36.15
+      title: Carpenter Ants with Dr. Shelley Berger
+      itunes.subtitle: Epigenetics in Carpenter Ants
+      itunes.summary: "Sindya Bhanoo, science reporter, and her daughter ask Dr. Shelley Berger about how she took brains out of carpenter ants, and managed to change their behavior! Read the full story in <a href=\"http://nyti.ms/1OXY5X1\">the science section of The New York Times - http://nyti.ms/1OXY5X1</a> "
+    - vars:
+        episode_guid: "2016-02"
+      pubDate: Tue, 12 Jan 2016 13:12:29 PST
+      itunes.duration: 00:03:21.23
+      title: Roman Toilets with Dr. Piers Mitchel
+      itunes.subtitle: "Why awesome toilets still didn't prevent diseases"
+      itunes.summary: "Sindya Bhanoo of The New York Times - Science talks to Dr. Piers Mitchell about two thousand year old poop, worms in your tummy, and toilets. Read the full story in <a href=\"http://nyti.ms/1RuXfDy\">the science section of The New York Times - http://nyti.ms/1RuXfDy</a>"
