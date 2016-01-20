@@ -1,0 +1,8 @@
+To grab a frame from the video:
+
+ffmpeg -ss <seconds> -i <input.mp4> -vframes 1 -f image2 <output.jpg>
+
+To get the time, in seconds, for a file
+
+ffprobe -i <input.mp4> -show_entries format=duration -v quiet -of csv="p=0"
+

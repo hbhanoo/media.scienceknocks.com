@@ -42,4 +42,11 @@ channel:
       itunes.duration: 00:03:21.23
       title: Roman Toilets with Dr. Piers Mitchel
       itunes.subtitle: "Why awesome toilets still didn't prevent diseases"
-      itunes.summary: "Sindya Bhanoo of The New York Times science section, and her daughter talk to Dr. Piers Mitchell about two thousand year old poop, worms in your tummy, and toilets. Read the full story in <a href=\"http://nyti.ms/1RuXfDy\">the science section of The New York Times - http://nyti.ms/1RuXfDy</a>"
+      itunes.summary: "Sindya Bhanoo, of The New York Times science section, and her daughter talk to Dr. Piers Mitchell about two thousand year old poop, worms in your tummy, and toilets. Read the full story in <a href=\"http://nyti.ms/1RuXfDy\">the science section of The New York Times - http://nyti.ms/1RuXfDy</a>"
+    - vars:
+        episode_guid: "2016-03"
+      pubDate: Tue, 19 Jan 2016 17:45:29 PST
+      itunes.duration: 00:03:21.23
+      title: "Bugs in Homes,  with Dr. Matt Bertone"
+      itunes.subtitle: "How many bugs are in your house?"
+      itunes.summary: "Learn about the bugs that live in our homes from Dr. Matt Bertone as he talks to Sindya Bhanoo, The New York Times Observatory columnist, and her daughter."
