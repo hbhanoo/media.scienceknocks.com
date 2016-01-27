@@ -6,3 +6,6 @@ To get the time, in seconds, for a file
 
 ffprobe -i <input.mp4> -show_entries format=duration -v quiet -of csv="p=0"
 
+
+gifs
+http://superuser.com/questions/556029/how-do-i-convert-a-video-to-gif-using-ffmpeg-with-reasonable-quality

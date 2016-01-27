@@ -13,7 +13,7 @@ defaults:
     guid: "%{episode_enclosure}"
 
 channel:
-  title: "Science Knocks (%{mediaType})"
+  title: "ScienceKnocks (%{mediaType})"
   link: http://www.facebook.com/scienceknocks
   language: en-us
   copyright: "2016 Science Knocks"
@@ -49,4 +49,11 @@ channel:
       itunes.duration: 00:03:21.23
       title: "Bugs in Homes,  with Dr. Matt Bertone"
       itunes.subtitle: "How many bugs are in your house?"
-      itunes.summary: "Learn about the bugs that live in our homes from Dr. Matt Bertone as he talks to Sindya Bhanoo, The New York Times Observatory columnist, and her daughter."
+      itunes.summary: "Learn about the bugs that live in our homes from Dr. Matt Bertone as he talks to Sindya Bhanoo, The New York Times Observatory columnist, and her daughter. Full story at http://nyti.ms/1QrjyqB"
+    - vars:
+        episode_guid: "2016-04"
+      pubDate: Tue, 26 Jan 2016 17:50:29 PST
+      itunes.duration: 00:03:21.23
+      title: "Prairie Vole hugs, with Dr. Larry Young"
+      itunes.subtitle: "Do animals hug and snuggle?"
+      itunes.summary: "Do animals hug and snuggle? Do they make each other feel better? Sindya Bhanoo, The New York Times Observatory columnist, and her daughter talk to Dr. Larry Young to find out. Full story at http://nyti.ms/1Sa3YDm."
