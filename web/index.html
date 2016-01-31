@@ -60,7 +60,7 @@
 			background-image: url(background-400x239.jpg);
 			display:none;
 		}
-		@media screen and (min-width: 700px) {
+		@media screen and (min-width: 890px) {
 			body {
 				background-image: url(background-400x239.jpg);
 				background-size:cover;
@@ -80,10 +80,13 @@
 			.container {
 				margin: 50px;
 			}
+			#videos {
+				position: absolute;
+				right: 10px;
+				}
 			.summary {
 				position: absolute;
 				margin: auto;
-				width: 600px;
 				border-radius: 1em;
 				background: rgba(24,24,24,0.6);
 				color: #aaa;
@@ -119,13 +122,19 @@
 			<div class="description" >
 				Science Knocks is a three minute science podcast hosted by Sindya Bhanoo, Observatory columnist for The New York Times, and her daughter, age four. 
 			</div>
+			<div id="videos">
+				<!-- 1. The <div> tag will contain the <iframe> (and video player) -->
+				<iframe src="http://www.youtube.com/embed/?list=UUxnbgDn0zI1K6Ph_HAkkdSA&playsinline=1" width="480" height="400"></iframe>
+			</div>
 			<div class="summary">
-				Follow us on your favorite platform.
+				Follow us on your favorite platform:
 				<table class="follow">
 					<tr>
 						<td>
 						<div class="fb-page" data-href="https://www.facebook.com/scienceknocks" data-tabs="timeline" data-width="250" data-height="70" data-small-header="true" data-adapt-container-width="false" data-hide-cover="true" data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/scienceknocks"><a href="https://www.facebook.com/scienceknocks">ScienceKnocks</a></blockquote></div></div>
 						</td>
+					</tr>
+					<tr>
 						<td>
 						<div class="g-ytsubscribe" data-channelid="UCxnbgDn0zI1K6Ph_HAkkdSA" data-layout="full" data-count="hidden">YouTube</div>
 
@@ -136,12 +145,17 @@
 							<a href="https://geo.itunes.apple.com/us/podcast/scienceknocks-video/id1076225795?mt=2" style="display:inline-block;background:url(http://linkmaker.itunes.apple.com/images/badges/en-us/badge_itunes-lrg.svg) no-repeat;width:165px;">Video Podcast
 </a>
 						</td>
+					</tr>
+					<tr>
 						<td>
 							<a href="https://geo.itunes.apple.com/us/podcast/scienceknocks-audio/id1076225797?mt=2" style="display:inline-block;background:url(http://linkmaker.itunes.apple.com/images/badges/en-us/badge_itunes-lrg.svg) no-repeat;width:165px;;">Audio Podcast</a>
 						</td>
 					</tr>
+					<tr>
 						<td> <a href="https://twitter.com/scienceknocks" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @scienceknocks</a>
 							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> </td>
+					</tr>
+					<tr>
 						<td>
 							<style>.ig-b- { display: inline-block; }
 							.ig-b- img { visibility: hidden; }
