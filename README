@@ -1,10 +1,11 @@
 To grab a frame from the video:
 
-ffmpeg -ss <seconds> -i <input.mp4> -vframes 1 -f image2 <output.jpg>
+dir=2016-05; time=67; ffmpeg -ss $time -i ~/Desktop/scienceknocks/episodes/$dir/$dir.mp4 -vframes 1 -f image2 ~/Desktop/scienceknocks/episodes/$dir/$dir.jpg
+
 
 To get the time, in seconds, for a file
 
-ffprobe -i <input.mp4> -show_entries format=duration -v quiet -of csv="p=0"
+dir=2016-05; for media in mp3 mp4; do ffprobe -i ~/Desktop/scienceknocks/episodes/$dir/$dir.$media -show_entries format=duration -v quiet -of csv="p=0"; done;
 
 
 gifs

@@ -1,6 +1,6 @@
 vars:
   server: "http://media.scienceknocks.com"
-  description: "Science Knocks is a three minute science podcast hosted by Sindya Bhanoo, Observatory columnist for The New York Times, and her daughter, age four."
+  description: "Science Knocks is a three minute science podcast hosted by Sindya Bhanoo, Observatory columnist for The New York Times, and her daughter, age four. Please rate our podcast if you like it!"
   author: "The Bhanoos"
   episode_base: "%{server}/episodes/%{episode_guid}"
   episode_thumbnail: "%{episode_base}/%{episode_guid}.jpg"
@@ -35,25 +35,32 @@ channel:
       itunes.duration: 00:03:36.15
       title: Carpenter Ants with Dr. Shelley Berger
       itunes.subtitle: Epigenetics in Carpenter Ants
-      itunes.summary: "Sindya Bhanoo of The New York Times science section, and her daughter ask Dr. Shelley Berger about how she took brains out of carpenter ants, and managed to change their behavior! Read the full story in <a href=\"http://nyti.ms/1OXY5X1\">the science section of The New York Times - http://nyti.ms/1OXY5X1</a> "
+      itunes.summary: "Sindya Bhanoo of The New York Times science section, and her daughter ask Dr. Shelley Berger about how she took brains out of carpenter ants, and managed to change their behavior! Read the full story in <a href=\"http://nyti.ms/1OXY5X1\">the science section of The New York Times - http://nyti.ms/1OXY5X1</a> Please take a moment to rate our podcast if you like it!"
     - vars:
         episode_guid: "2016-02"
       pubDate: Tue, 12 Jan 2016 13:12:29 PST
       itunes.duration: 00:03:21.23
       title: Roman Toilets with Dr. Piers Mitchel
       itunes.subtitle: "Why awesome toilets still didn't prevent diseases"
-      itunes.summary: "Sindya Bhanoo, of The New York Times science section, and her daughter talk to Dr. Piers Mitchell about two thousand year old poop, worms in your tummy, and toilets. Read the full story in <a href=\"http://nyti.ms/1RuXfDy\">the science section of The New York Times - http://nyti.ms/1RuXfDy</a>"
+      itunes.summary: "Sindya Bhanoo, of The New York Times science section, and her daughter talk to Dr. Piers Mitchell about two thousand year old poop, worms in your tummy, and toilets. Read the full story in <a href=\"http://nyti.ms/1RuXfDy\">the science section of The New York Times - http://nyti.ms/1RuXfDy</a> Please take a moment to rate our podcast if you like it!"
     - vars:
         episode_guid: "2016-03"
       pubDate: Tue, 19 Jan 2016 17:45:29 PST
       itunes.duration: 00:03:21.23
       title: "Bugs in Homes,  with Dr. Matt Bertone"
       itunes.subtitle: "How many bugs are in your house?"
-      itunes.summary: "Learn about the bugs that live in our homes from Dr. Matt Bertone as he talks to Sindya Bhanoo, The New York Times Observatory columnist, and her daughter. Full story at http://nyti.ms/1QrjyqB"
+      itunes.summary: "Learn about the bugs that live in our homes from Dr. Matt Bertone as he talks to Sindya Bhanoo, The New York Times Observatory columnist, and her daughter. Full story at http://nyti.ms/1QrjyqB Please take a moment to rate our podcast if you like it!"
     - vars:
         episode_guid: "2016-04"
       pubDate: Tue, 26 Jan 2016 17:50:29 PST
       itunes.duration: 00:03:21.23
       title: "Prairie Vole hugs, with Dr. Larry Young"
       itunes.subtitle: "Do animals hug and snuggle?"
-      itunes.summary: "Do animals hug and snuggle? Do they make each other feel better? Sindya Bhanoo, The New York Times Observatory columnist, and her daughter talk to Dr. Larry Young to find out. Full story at http://nyti.ms/1Sa3YDm."
+      itunes.summary: "Do animals hug and snuggle? Do they make each other feel better? Sindya Bhanoo, The New York Times Observatory columnist, and her daughter talk to Dr. Larry Young to find out. Full story at http://nyti.ms/1Sa3YDm Please take a moment to rate our podcast if you like it!"
+    - vars:
+        episode_guid: "2016-05"
+      pubDate: Wed, 10 Feb 2016 15:50:29 PST
+      itunes.duration: 00:03:21.23
+      title: "Cavemen eating Tortoises, with Dr. Ran Berkai"
+      itunes.subtitle: "Cavemen ate Tortoises"
+      itunes.summary: "Four hundred thousand years ago, hunter-gatherers living in what is now Israel supplemented their diet with roasted tortoises, according to Dr. Ran Barkai of Tel Aviv University. Sindya Bhanoo, The New York Times Observatory columnist, and her daughter talk to Dr. Barkai to find out more. Full story at http://nyti.ms/1Wf70Es Please take a moment to rate our podcast if you like it!"
