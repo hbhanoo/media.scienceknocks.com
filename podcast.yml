@@ -13,7 +13,7 @@ defaults:
     guid: "%{episode_enclosure}"
 
 channel:
-  title: "ScienceKnocks (%{mediaType})"
+  title: "ScienceKnocks (%{mediaType}) - a four year old and her nytimes columnist mom interview scientists."
   link: http://www.facebook.com/scienceknocks
   language: en-us
   copyright: "2016 Science Knocks"
@@ -64,3 +64,10 @@ channel:
       title: "Cavemen eating Tortoises, with Dr. Ran Berkai"
       itunes.subtitle: "Cavemen ate Tortoises"
       itunes.summary: "Four hundred thousand years ago, hunter-gatherers living in what is now Israel supplemented their diet with roasted tortoises, according to Dr. Ran Barkai of Tel Aviv University. Sindya Bhanoo, The New York Times Observatory columnist, and her daughter talk to Dr. Barkai to find out more. Full story at http://nyti.ms/1Wf70Es Please take a moment to rate our podcast if you like it!"
+    - vars:
+        episode_guid: "2016-06"
+      pubDate: Sat, 05 Mar 2016 15:30:29 PST
+      itunes.duration: 00:03:21.23
+      title: "Wild Tomatoes fight whiteflies, with Thomas McDaniel"
+      itunes.subtitle: "Those pesky whiteflies!"
+      itunes.summary: "Everyone loves a good summer tomato. This week, the Science Knocks team talks to Thomas McDaniel of Newcastle University and finds out about how the domesticated tomato differs from the wild tomato. And, we find out how the wild tomato might help us keep the tomatoes we eat free of pesky whiteflies. Full story at http://nyti.ms/1QtAywQ Please take a moment to rate our podcast if you like it!"
