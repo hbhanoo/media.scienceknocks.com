@@ -8,103 +8,36 @@
 		body {
 			font-family: Verdana, sans-serif;
 			padding:0;
-			margin: 0;
 			color: #222;
 			background-image:none;
+			background-color: rgb(255, 209, 128);
 		}
 		.container {
+			width: 480px;
 			margin: auto;
-			padding: 0 50px 0 50px;
-			max-width: 400px;
-			min-width: 250px;
-		}
-		.splash {
-			border-radius: 1em;
-			height:300px;
-			background-size:cover;
-			background-image: url(background-400x239.jpg);
-			background-repeat: no-repeat;
-		}
-		.description {
-			margin: 20px;
-			font-size: 12px;
 			}
-		.summary {
-			/* common */
-			text-align: left;
-			/* low res only */
-			color: #555;
-			font-size: 16px;
-		}
-		.follow tr {
-			line-height: 100px;
-		}
-		.follow td {
-			height: 100px;
-			}
-		.header {
-			width:100%;
-		}
 		h1 {
 			font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 			font-weight: 200;
-			font-size: 22px;
-			color:#000;
+			font-size: 3em;
+			margin: auto;
+			color: #000;
+			text-align: center;
 		}
 		a, a:visited, a:active {
-			color: #000;
-			font-weight: 200;
+			color: rgb(255, 55, 0);
 			text-decoration: none;
 		}
-		#invisiblehd {
-			background-image: url(background-400x239.jpg);
-			display:none;
+		a:active, a:hover {
+			color: rgb(255, 128, 0);
 		}
-		@media screen and (min-width: 890px) {
-			body {
-				background-image: url(background-400x239.jpg);
-				background-size:cover;
-				background-attachment: fixed;
-				background-repeat: no-repeat;
-			}
-			.splash {
-				background-image: none;
-				display:none;
-			}
-			h1 {
-				font-size: 32px;
-			}
-			#invisiblehd {
-				background-image: url(background.jpg);
-			}
-			.container {
-				margin: 50px;
-			}
-			#videos {
-				position: absolute;
-				right: 10px;
-				}
-			.summary {
-				position: absolute;
-				margin: auto;
-				border-radius: 1em;
-				background: rgba(24,24,24,0.6);
-				color: #aaa;
-				font-size: 14px;
-				text-align: justify;
-				text-justify: distribute;
-				padding: 1em;
-			}
-			a, a:visited, a:active {
-				color: #fff;
-				font-weight: 200;
-				text-decoration: none;
-			}
+		.follow li {
+			line-height: 80px;
 		}
 		</style>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	</head>
-	<body class="image">
+	<body>
 		<!-- various APIs -->
 		<div id="fb-root"></div>
 		<script>(function(d, s, id) {
@@ -117,84 +50,28 @@
 		<script src="https://apis.google.com/js/platform.js"></script>
 
 		<div class="container">
-			<h1>ScienceKnocks</h1>
-			<div class="splash image"> </div>
-			<div class="description" >
-				Science Knocks is a three minute science podcast hosted by Sindya Bhanoo, Observatory columnist for The New York Times, and her daughter, age four. 
-			</div>
-			<div id="videos">
-				<!-- 1. The <div> tag will contain the <iframe> (and video player) -->
-				<iframe src="http://www.youtube.com/embed/?list=UUxnbgDn0zI1K6Ph_HAkkdSA&playsinline=1" width="480" height="400"></iframe>
-			</div>
-			<div class="summary">
-				Follow us on your favorite platform:
-				<table class="follow">
-					<tr>
-						<td>
-						<div class="fb-page" data-href="https://www.facebook.com/scienceknocks" data-tabs="timeline" data-width="250" data-height="70" data-small-header="true" data-adapt-container-width="false" data-hide-cover="true" data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/scienceknocks"><a href="https://www.facebook.com/scienceknocks">ScienceKnocks</a></blockquote></div></div>
-						</td>
-					</tr>
-					<tr>
-						<td>
-						<div class="g-ytsubscribe" data-channelid="UCxnbgDn0zI1K6Ph_HAkkdSA" data-layout="full" data-count="hidden">YouTube</div>
+			<h1><span style="font-size:.4em; color: #330">when</span> Science Knocks...</h1>
+				<p/>Science Knocks is an animated podcast for kids hosted by Naina Bhanoo, age five and her mother, the former Observatory columnist for The New York Times.
+				<p/>Please follow us, like us, and spread the word on:
+				<ul>
+					<li/><a href="https://www.facebook.com/scienceknocks">facebook</a>,
+					<li/><a href="https://www.youtube.com/channel/UCxnbgDn0zI1K6Ph_HAkkdSA">YouTube</a>,
+					<li/><a href="https://geo.itunes.apple.com/us/podcast/scienceknocks-video/id1076225795?mt=2">iTunes Podcast</a> (or the <a href="https://geo.itunes.apple.com/us/podcast/scienceknocks-audio/id1076225797?mt=2">audio-only podcast</a>),
+					<li/><a href="https://twitter.com/scienceknocks">twitter</a>,
+					<li/><a href="https://www.instagram.com/scienceknocks">instagram</a>,
+					<li/><a href="https://soundcloud.com/scienceknocks">soundcloud (audio-only)</a>.
+				</ul>
 
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="https://geo.itunes.apple.com/us/podcast/scienceknocks-video/id1076225795?mt=2" style="display:inline-block;background:url(http://linkmaker.itunes.apple.com/images/badges/en-us/badge_itunes-lrg.svg) no-repeat;width:165px;">Video Podcast
-</a>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<a href="https://geo.itunes.apple.com/us/podcast/scienceknocks-audio/id1076225797?mt=2" style="display:inline-block;background:url(http://linkmaker.itunes.apple.com/images/badges/en-us/badge_itunes-lrg.svg) no-repeat;width:165px;;">Audio Podcast</a>
-						</td>
-					</tr>
-					<tr>
-						<td> <a href="https://twitter.com/scienceknocks" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @scienceknocks</a>
-							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> </td>
-					</tr>
-					<tr>
-						<td>
-							<style>.ig-b- { display: inline-block; }
-							.ig-b- img { visibility: hidden; }
-							.ig-b-:hover { background-position: 0 -60px; } .ig-b-:active { background-position: 0 -120px; }
-							.ig-b-48 { width: 48px; height: 48px; background: url(//badges.instagram.com/static/images/ig-badge-sprite-48.png) no-repeat 0 0; }
-							@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-								.ig-b-48 { background-image: url(//badges.instagram.com/static/images/ig-badge-sprite-48@2x.png); background-size: 60px 178px; } }</style>
-							<a href="https://www.instagram.com/scienceknocks/?ref=badge" class="ig-b- ig-b-48"><img src="//badges.instagram.com/static/images/ig-badge-48.png" alt="Instagram" /></a>
-						</td>
-					</tr>
-				</table>
-			</div>
-			<img id="invisiblehd"></img>
-			<script>
-			var setimage = function() {
-				var altimage = $("#invisiblehd").css("background-image");
-				$(".image").each(function() {
-					if ($(this).css("background-repeat") == "no-repeat") {
-						$(this).css({"background-image" : altimage});
-					} else {
-						$(this).css({"background-image" : "none"});
-					}
-				});
-			};
-			$("<img>").load(function() {
-				$(window).resize(setimage);
-				setimage();
-			}).attr('src', function() {
-				var imgurl = $("#invisiblehd").css('background-image');
-				console.log("imgurl [" + imgurl + ']');
-				imgurl = imgurl.substring(4, imgurl.length - 1);
-				if(imgurl[0] == '"' && imgurl[imgurl.length - 1] == '"') {
-					imgurl = imgurl.substring(1, imgurl.length - 1);
-				}
-				console.log("imgurl [" + imgurl + ']');
-				return imgurl;
-			});
-			</script>
-			<script>
+				<p/>Check out a recent video:
+				<div id="videos">
+					<!-- 1. The <div> tag will contain the <iframe> (and video player) -->
+					<iframe src="http://www.youtube.com/embed/?list=UUxnbgDn0zI1K6Ph_HAkkdSA&playsinline=1" width="550" height="400"></iframe>
+				</div>
+				<p/>If you're a researcher and would like to be interviewed, <a href="https://goo.gl/forms/65cDX19kLDSvLdgB2">fill out a short form.</a>
+
+				<p/>If you'd like to sponsor an episode, <a href="https://goo.gl/forms/po5ufSI5UAoBGzqW2">send us a note</a>.
+				
+				<script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
