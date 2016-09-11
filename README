@@ -1,3 +1,6 @@
+resources:
+ http://otranscribe.com/
+
 To grab a frame from the video:
 
 dir=2016-06; time=95; ffmpeg -ss $time -i ~/Desktop/scienceknocks/episodes/$dir/$dir.mp4 -vframes 1 -f image2 ~/Desktop/scienceknocks/episodes/$dir/$dir.jpg
