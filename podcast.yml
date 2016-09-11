@@ -1,6 +1,6 @@
 vars:
   server: "http://media.scienceknocks.com"
-  description: "Science Knocks is a three minute science podcast hosted by Sindya Bhanoo, Observatory columnist for The New York Times, and her daughter, age four. Please rate our podcast if you like it!"
+  description: "Science Knocks is an animated podcast for kids hosted by Naina Bhanoo, age five and her mother, the former Observatory columnist for The New York Times. Please rate our podcast if you like it!"
   author: "The Bhanoos"
   episode_base: "%{server}/episodes/%{episode_guid}"
   episode_thumbnail: "%{episode_base}/%{episode_guid}.jpg"
@@ -71,3 +71,10 @@ channel:
       title: "Wild Tomatoes fight whiteflies, with Thomas McDaniel"
       itunes.subtitle: "Those pesky whiteflies!"
       itunes.summary: "Everyone loves a good summer tomato. This week, the Science Knocks team talks to Thomas McDaniel of Newcastle University and finds out about how the domesticated tomato differs from the wild tomato. And, we find out how the wild tomato might help us keep the tomatoes we eat free of pesky whiteflies. Full story at http://nyti.ms/1QtAywQ Please take a moment to rate our podcast if you like it!"
+    - vars:
+        episode_guid: "2016-07"
+      pubDate: Fri, 09 Sepr 2016 12:30:29 PST
+      itunes.duration: 369
+      title: "Smart humans and helpless babies, with Celeste Kidd"
+      itunes.subtitle: "Why are humans so smart, but infants so helpless?"
+      itunes.summary: "It's a paradox that humans are so smart, yet our babies are so helpless. The Science Knocks team spoke to Celeste Kidd of the University of Rochester to find out why. Please take a moment to rate our podcast if you like it!"
