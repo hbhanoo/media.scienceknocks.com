@@ -13,7 +13,7 @@ defaults:
     guid: "%{episode_enclosure}"
 
 channel:
-  title: "ScienceKnocks (%{mediaType}) - a four year old and her nytimes columnist mom interview scientists."
+  title: "ScienceKnocks (%{mediaType}) - a five year old interviews scientists."
   link: http://www.facebook.com/scienceknocks
   language: en-us
   copyright: "2016 Science Knocks"
