@@ -22,12 +22,8 @@ require 'uri'
 module Podcastr
 
   class FeedUploader
-    def self.upload(file, bucket_name)
-      s3 = Aws::S3::Resource.new(
-        credentials: Aws::Credentials.new(ENV['AWS_AKID'], ENV['AWS_SECRET']),
-        region: 'us-east-1'
-      )
-      bucket = s3.bucket(bucket_name)
+    def self.upload(file, bucket_name, s3_client)
+      bucket = s3_client.bucket(bucket_name)
       obj = bucket.object(file)
       obj.upload_file(file, acl:'public-read',
                       content_type: 'application/rss+xml')
