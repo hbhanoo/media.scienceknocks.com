@@ -13,15 +13,28 @@ Toolchain for publishing a video podcast
  o instagram
  o sound cloud
 =end
+require 'aws-sdk'
 require 'builder'
 require 'yaml'
 require 'net/http'
 require 'uri'
-require 'podcastr'
-require 'benchmark'
 
 module Podcastr
 
+  class FeedUploader
+    def self.upload(file, bucket_name)
+      s3 = Aws::S3::Resource.new(
+        credentials: Aws::Credentials.new(ENV['AWS_AKID'], ENV['AWS_SECRET']),
+        region: 'us-east-1'
+      )
+      bucket = s3.bucket(bucket_name)
+      obj = bucket.object(file)
+      obj.upload_file(file, acl:'public-read',
+                      content_type: 'application/rss+xml')
+      STDERR.puts "uploaded #{file} to #{obj.public_url}"
+    end
+  end
+  
   # Generate an RSS feed using a YML file.
   # The idea is to make the YML file as DRY as possible
   # so you can do interpolation using %{name} in any value.
@@ -50,13 +63,17 @@ module Podcastr
       end
       return output
     end
+    
     def generate_to_file(filename, extra_vars = {})
+      STDERR.puts "working on generating #{filename}..."
       xml = self.generate_xml(extra_vars)
       File.open(filename, 'w') { |f| f.write xml }
       STDERR.puts "wrote to #{filename}\n"
     end
 
+    # ----------------------------------------------------------------------
     private
+    # ----------------------------------------------------------------------
     def interpolate_string(str, vars)
       while str =~ /%{.*}/ do
         str = str % vars
